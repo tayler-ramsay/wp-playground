@@ -1,0 +1,276 @@
+/*
+Theme NAme: Playground
+Author: Tayler Ramsay
+Author: http://taylerramsay.com
+Version: 0.01
+*/
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+body {
+  color: #777;
+  font-family:sans-serif;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+a {
+  text-decoration: none;
+  color:#fa7210;
+}
+
+/*header layout*/
+
+.site-header{
+  border-bottom: 1px solid #bbb;
+}
+
+/*search form*/
+
+div.head-search{
+  float: right;
+}
+
+div.head-search label{
+  position: absolute;
+  left:-9999; /*hide search text for accessibility*/
+}
+
+div.head-search #searchsubmit{
+  background-color: #fa7210;
+  vertical-align: top;
+  color:#fff;
+  padding: 12.5px 20px;
+  border:  none;
+  font-size: 1em;
+}
+
+
+div.head-search #s{
+  vertical-align: top;
+  padding: 0px 50px;
+  font-size: 2em;
+}
+/*blog posts*/
+
+
+article.post{
+  border-bottom: solid 1px #bbb;
+}
+
+article.post:last-of-type{
+  border-bottom: none;
+}
+
+/* navigation */
+
+.site-nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after {content:""; display: table;}
+.site-nav ul:after {clear: both;}
+.site-nav ul {*zoom: 1;}
+
+.site-nav ul li{
+  list-style: none;
+  float: left;
+
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+  display: block;
+  padding: 10px 18px;
+}
+
+.site-header nav ul li a:hover{
+  text-decoration: underline;
+
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
+  color: #bbb;
+}
+
+/*main column*/
+.main-column{
+  width: 66%;
+  float: left;
+}
+
+/*secondary column*/
+.secondary-column{
+  width: 30%;
+  float:right;
+}
+
+/*footer menu*/
+
+.site-footer nav ul li {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #bbb;
+}
+
+.site-footer nav ul li:last-child {
+  border-right: none;
+}
+
+/*footer widget layout*/
+.footer-widgets{
+  display: flex;
+  justify-content: space-around;
+}
+
+.widget-item ul li{
+  list-style: none;
+}
+
+/*page layout*/
+
+article.page h2{
+  font-size: 3em;
+}
+
+
+/*portfolio layout*/
+
+.column-container{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.title-column{
+  flex: 2;
+  flex-basis: 20%;
+
+}
+
+.text-column{
+  color:#fa7210;
+  flex: 1;
+  flex-basis: 70%;
+}
+
+/*children-links*/
+
+.children-links {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 80%;
+}
+
+.children-links ul {
+  flex-basis: 10%;
+
+}
+
+
+.children-links li {
+  margin-left: 20px;
+}
+
+.children-links .parent-link{
+  padding-right: 20px;
+  font-size: 120%;
+  font-weight: bold;
+  border-right: 1px solid #bbb;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+  border-bottom: 1px solid #bbb;
+  color: #bbb;
+  cursor: default;
+}
+
+/*post styles*/
+
+.post h2{
+  margin-bottom: 0;
+}
+
+p.post-info{
+  font-size: 80%;
+  color: #999;
+}
+
+/*images*/
+
+img{
+  max-width: 100%;
+  height: auto;
+
+}
+
+.has-thumbnail{
+  position: relative;
+  padding-left: 200px
+}
+
+.post-thumbnail{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+/*aside styles*/
+
+article.post-aside,
+article.post-link{
+  font: 2em;
+  color: #fff;
+  background-color: #fa7230;
+  padding: 20px;
+
+}
+
+.mini-meta{
+  font-size: 68%;
+  margin-bottom: 0;
+  color:#ffbb88;
+
+}
+/*link post format styles*/
+
+article.post-link{
+margin: 10px 0px;
+border-radius: 0;
+padding: 10px 80px;
+background-color: #007af9;
+}
+
+.post-link a{
+  display: block;
+  padding: 20px;
+  color:#fff;
+}
+
+
+/*post format gallery styles*/
+
+article.post-gallery{
+  background-color: #bbb;
+  padding: 0px;
+  color:#fff;
+}
+
+article.post-gallery h2{
+  text-align: center;
+}
+
+article.post-gallery img{
+
+  border: none !important;
+}
