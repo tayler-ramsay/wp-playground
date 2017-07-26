@@ -1,5 +1,5 @@
 /*
-Theme NAme: Playground
+Theme NAme: wp-playground
 Author: Tayler Ramsay
 Author: http://taylerramsay.com
 Version: 0.01
@@ -261,7 +261,7 @@ background-color: #007af9;
 /*post format gallery styles*/
 
 article.post-gallery{
-  background-color: #bbb;
+  background-color: #222;
   padding: 0px;
   color:#fff;
 }
